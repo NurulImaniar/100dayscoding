@@ -1,0 +1,15 @@
+
+package day.pkg1;
+public class Day1 {
+
+    public static void main(String[] args) {
+        System.out.println("Hello Word");
+        
+        String nama = "Nurul Imaniar";
+        int umur = 18;
+        System.out.println(nama );
+        System.out.println(umur);
+        
+    }
+    
+}
