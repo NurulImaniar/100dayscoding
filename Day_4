@@ -1,0 +1,27 @@
+
+package day_4;
+
+public class Day_4 {
+
+    public static void main(String[] args) {
+       // Tipe data Boolean
+        boolean Variabel = true;
+        System.out.println("Nilai bolean var = " + Variabel);
+        System.out.println("Nilai max = " + Boolean.TRUE);
+        System.out.println("Nilai min = " + Boolean.FALSE); 
+        
+        
+        boolean var1,var2,var3,var4;
+        
+        var1 = 6 < 5; // > lebih kecil
+        var2 = 8 > 3; // > lebih besar
+        var3 = 6 == 8; // == Sama dengan
+        var4 = 'b' != 'B'; // != Tidak sama dengan
+        
+        System.out.println("Isi Var1 = " + var1);
+        System.out.println("Isi Var2 = " + var2);
+        System.out.println("Isi Var3 = " + var3);
+        System.out.println("Isi Var4 = " + var4);
+    }
+    
+}
