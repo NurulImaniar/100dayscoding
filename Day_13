@@ -1,0 +1,29 @@
+package day_11;
+import java.util.Scanner;
+public class Day_13 {
+    public static void main(String[] args) {
+        Scanner nilai = new Scanner (System.in);
+        
+        System.out.print("Belanja = Rp. ");
+        double belanja = nilai.nextDouble();
+        
+        if (belanja >= 650000){
+            System.out.println("Diskon 20%");
+            double diskon = belanja * 0.2;
+            belanja -= diskon;
+        } else if (belanja >= 220000){
+            System.out.println("Diskon 15%");
+            double diskon = belanja * 0.15;
+            belanja -= diskon;
+            
+        } else if (belanja >= 100000){
+            System.out.println("Diskon 10%");
+            double diskon = belanja * 0.1;
+            belanja -= diskon;
+        }    
+        else{
+            System.out.println("Tidak dapat diskon");
+        }
+        System.out.println("Total akhir belanja = Rp. "+belanja );
+}
+}
