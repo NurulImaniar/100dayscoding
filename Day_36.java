@@ -17,6 +17,7 @@ public class Day_36 {
         for (int nilai = 0; nilai < data.length; nilai++){
             if (cari == data[nilai]){
                 System.out.println("Index-"+ nilai);
+                hasil++;
             }
         }
         if (hasil == 0){
