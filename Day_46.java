@@ -1,21 +1,25 @@
-package day_11;
+package Day_46;
 import java.util.Scanner;
 public class Day_46 {
     public static void main(String[] args) {
-        Scanner masuk = new Scanner (System.in);
-        int bilangan,pangkat,hasil;
-        System.out.print("Masukkan bilangan : ");
-        bilangan = masuk.nextInt();
-        System.out.print("Masukkan pangkat : ");
-        pangkat = masuk.nextInt();
-        System.out.println("-------------------");
-        System.out.print("Hasil : ");
-        hasil = bilangan;
-        
-        for (int angka = 1; angka < pangkat; angka++) {
-            hasil *= bilangan;
+        int angka;
+        Scanner input = new Scanner (System.in);
+        System.out.print("Masukkan angka : ");
+        angka = input.nextInt();
+        int hasil = angka;
+        System.out.println(angka+"! =");
+        for (int nilai = angka; nilai > 0; nilai--){
+            System.out.print(nilai);
+            if (nilai > 1){
+                System.out.print(" x ");
+            }
+            if (angka != nilai){
+                hasil *= nilai;
+            }
         }
-        System.out.println(hasil);
+        System.out.println("");
+        System.out.println("  = "+hasil);
+        
     }
     
 }
